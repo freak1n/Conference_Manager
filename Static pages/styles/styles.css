@@ -1,0 +1,18 @@
+html,body,div,header,h1,h2,section,footer,img{margin:0;padding:0;}
+body{font-family:Arial,Helvetica,sans-serif;font-size:62.5%;background-color:#355664;color:#fcfcfc;}
+header,section{display:block;}
+h1,h2,h3{font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;text-shadow:0 1px 1px black;}
+h1{font-size:3.5em;padding:0.5em 0 0;text-transform:uppercase;}
+h3{font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;font-size:2em;font-weight:normal;margin:0 0 1em;}
+h2{font-size:2.2em;font-weight:normal;letter-spacing:0.01em;text-transform:uppercase;}
+a,a:visited{color:#0196e3;text-decoration:none;outline:none;}a:hover,a:visited:hover{text-decoration:underline;}
+a img,a:visited img{border:none;}
+.line{height:1px;background-color:#24404c;border-bottom:1px solid #416371;margin:32px 0;}
+#login-panel{width:600px;height:380px;margin:60px auto;padding:20px;border-radius:10px;background-color:#213E4A;}#login-panel img{float:left;margin-right:20px;}
+#login-panel h1{font-size:3.5em;padding:0.5em 0 0;padding-top:66px;}
+#login-panel .login-textbox{display:block;height:30px;width:210px;margin-bottom:50px;border-radius:10px;padding-left:10px;font-size:2em;}
+#login-panel #text-box-container{float:left;margin-top:20px;}
+#login-panel #buttons-container{float:right;}
+#login-panel .button{display:block;margin:10px;padding:20px 60px;text-align:center;text-decoration:none;font:bold 2em Arial,sans-serif;text-shadow:1px 1px 1px rgba(255, 255, 255, 0.22);border-radius:15px;-webkit-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);-moz-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);-webkit-transition:all 0.15s ease;-moz-transition:all 0.15s ease;-o-transition:all 0.15s ease;-ms-transition:all 0.15s ease;transition:all 0.15s ease;}
+#login-panel .blue{color:#19667d;background:#70c9e3;}
+#login-panel .gray{color:#515151;background:#d3d3d3;}
