@@ -1,8 +1,12 @@
-html,body,div,header,h1,h2,section,footer,img{margin:0;padding:0;}
+html,body,div,header,h1,h2,section,footer,img{margin:0;padding:0;border:0;font-size:62.5%;font:inherit;vertical-align:baseline;}
 body{font-family:Arial,Helvetica,sans-serif;font-size:62.5%;background-color:#355664;color:#fcfcfc;}
 header,section{display:block;}
+#page-container{width:960px;margin:0 auto;}#page-container #header-inner{position:relative;height:130px;border-bottom:1px solid #416371;}#page-container #header-inner img,#page-container #header-inner h1{position:absolute;}
+#page-container #header-inner h1{left:140px;bottom:26px;}
+#page-container #presentation-content{margin-top:20px;font-size:1.9em;}
+#page-container #login-form-container{margin-top:20px;height:500px;background-color:#213E4A;border-radius:10px;}#page-container #login-form-container header{height:60px;}#page-container #login-form-container header h2{border-bottom:1px solid #416371;}
 h1,h2,h3{font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;text-shadow:0 1px 1px black;}
-h1{font-size:3.5em;padding:0.5em 0 0;text-transform:uppercase;}
+h1{font-size:3.5em;text-transform:uppercase;}
 h3{font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;font-size:2em;font-weight:normal;margin:0 0 1em;}
 h2{font-size:2.2em;font-weight:normal;letter-spacing:0.01em;text-transform:uppercase;}
 a,a:visited{color:#0196e3;text-decoration:none;outline:none;}a:hover,a:visited:hover{text-decoration:underline;}
