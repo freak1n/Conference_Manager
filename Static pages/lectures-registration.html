@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Conference Manager - Lecture Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <div id="header-inner">
+                <img src="img/conference-manager-logo.png" alt="Conference Manager" />
+                <h1>Conference Manager</h1>
+            </div>    
+        </header>
+    
+        <div id="lectures-reg-container">
+            <h2>Регистриране на лектор</h2>
+            <form action="post">
+                <div class="textinput-container">
+                    <label for="username-tb-lecture-reg">Потребителско име:</label>
+                    <input id="username-tb-lecture-reg" name="username-tb-lecture-reg" type="text" />
+                </div>
+
+                 <div class="textinput-container">
+                    <label for="firstname-tb-lecture-reg">Име:</label>
+                    <input id="firstname-tb-lecture-reg" name="firstname-tb-lecture-reg" type="text" />
+                </div>   
+
+                <div class="textinput-container">
+                    <label for="lastname-tb-lecture-reg">Фамилия:</label>
+                    <input id="lastname-tb-lecture-reg" name="lastname-tb-lecture-reg" type="text" />
+                </div>   
+
+                <div class="textinput-container">
+                    <label for="password-tb-lecture-reg">Парола:</label>
+                    <input id="password-tb-lecture-reg" name="password-tb-lecture-reg" type="password" />
+                </div>
+
+                <div class="textinput-container">
+                    <label for="re-password-tb-lecture-reg">Пoвтори паролата:</label>
+                    <input id="re-password-tb-lecture-reg" name="re-password-tb-lecture-reg" type="password" />
+                </div>
+
+                <div class="textarea-container">
+                    <label for="autobiography-ta">Кратка автобиография:</label>
+                    <textarea name="autobiography-ta" id="autobiography-ta"></textarea>
+                </div>
+                
+                <div id="upload-container">
+                    <div class="textinput-container">
+                        <label>Профилна снимка:</label>
+                        <input type="text" disabled />
+                    </div>
+                    <div class="upload-btns-container">
+                        <input type="button" value="Намери" />    
+                        <input type="button" value="Качи" />
+                    </div>    
+                </div>
+                
+                <div id="lectures-reg-buttons-container" class="buttons-for-forms">
+                    <input name="back-btn" class="form-button gray-btn" type="button" value="Назад" />
+                    <input name="registration-btn" class="form-button blue-btn" type="submit" value="Регистрирай" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

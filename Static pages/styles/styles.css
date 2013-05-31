@@ -7,12 +7,18 @@ h2{font-size:2.2em;font-weight:normal;letter-spacing:0.01em;text-transform:upper
 h3{font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;font-size:2em;font-weight:normal;margin:0 0 1em;}
 a,a:visited{color:#0196e3;text-decoration:none;outline:none;}a:hover,a:visited:hover{text-decoration:underline;}
 a img,a:visited img{border:none;}
-.textinput-container{width:450px;height:30px;margin-bottom:20px;}.textinput-container input[type=text],.textinput-container input[type=password]{float:right;border:1px solid #A5C2C8;padding:5px 5px 5px 5px;font:bold 1.6em Helvetiva,Arial,sans-serif;}
-.textinput-container label{float:left;display:block;width:200px;margin:10px 10px 0 0;text-align:right;font-size:2em;}
-.buttons-for-forms{width:500px;margin:30px;margin-left:100px;}.buttons-for-forms .form-button{padding:10px 20px;text-align:center;text-decoration:none;font:bold 2em Arial,sans-serif;text-shadow:1px 1px 1px rgba(255, 255, 255, 0.22);border-radius:15px;-webkit-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);-moz-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);}.buttons-for-forms .form-button:hover{cursor:pointer;}
+label{font-size:2em;}
+input[type=text],input[type=password]{border:1px solid #A5C2C8;padding:5px;font:bold 1.6em Helvetiva,Arial,sans-serif;}
+.textinput-container{min-height:0;_zoom:1;width:450px;height:30px;margin-bottom:20px;}.textinput-container:after{display:block;content:"";clear:both;}
+.textinput-container input[type=text],.textinput-container input[type=password]{float:right;}
+.textinput-container label{float:left;display:block;width:200px;margin:10px 10px 0 0;text-align:right;}
+.textarea-container{padding:15px;}.textarea-container label{font-size:2em;}
+.textarea-container textarea{display:block;width:500px;height:220px;margin-top:8px;padding:5px;border:1px solid #cccccc;font:1.6em Helvetiva,Arial,sans-serif;resize:none;}
+.buttons-for-forms{width:500px;margin:30px;margin-left:120px;}.buttons-for-forms .form-button{margin-left:10px;padding:10px 20px;text-align:center;text-decoration:none;font:bold 2em Arial,sans-serif;text-shadow:1px 1px 1px rgba(255, 255, 255, 0.22);border-radius:15px;-webkit-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);-moz-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);}.buttons-for-forms .form-button:hover{cursor:pointer;}
 .buttons-for-forms .blue-btn{color:#19667d;background:#70c9e3;}.buttons-for-forms .blue-btn:hover{background:#00688B;color:#70c9e3;}
 .buttons-for-forms .gray-btn{color:#515151;background:#d3d3d3;}.buttons-for-forms .gray-btn:hover{background:#787878;color:#ccc;}
 #page-container{width:960px;margin:0 auto;}#page-container #header-inner{position:relative;height:130px;border-bottom:1px solid #416371;}#page-container #header-inner img,#page-container #header-inner h1{position:absolute;}
 #page-container #header-inner h1{left:140px;bottom:26px;}
 #page-container #presentation-content{margin-top:20px;font-size:1.9em;}
-#page-container #login-form-container{width:550px;height:270px;margin:40px auto;padding:15px;background-color:#213E4A;border-radius:10px;}#page-container #login-form-container h2{margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #416371;}
+#page-container #login-container,#page-container #lectures-reg-container{width:550px;margin:40px auto;padding:15px;background-color:#213E4A;border-radius:10px;}#page-container #login-container h2,#page-container #lectures-reg-container h2{margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #416371;}
+#page-container #login-container .upload-btns-container,#page-container #lectures-reg-container .upload-btns-container{margin-left:225px;}#page-container #login-container .upload-btns-container input[type=button],#page-container #lectures-reg-container .upload-btns-container input[type=button]{font-size:1.6em;}
