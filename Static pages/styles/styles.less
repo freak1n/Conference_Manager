@@ -21,53 +21,24 @@ header, section {
 	display: block;
 }
 
-#page-container{
-	width: 960px;
-	margin: 0 auto;
+/*================================*/
+/*     Clear fix for floating
+/*================================*/
+.clearfix() {
+ 	 min-height: 0;
+	 _zoom: 1;
+	
 
-	#header-inner{
-		position: relative;
-		height: 130px;
-		border-bottom:1px solid #416371;
-		img, h1 {
-			position: absolute;
-		}
-
-		h1 {
-			left: 140px;
-			bottom: 26px;
-		}
-	}
-
-	#presentation-content{
-		margin-top: 20px;
-		font-size:1.9em;
-
-	}
-
-	#login-form-container{
-		margin-top: 20px;
-		height: 500px;
-		background-color: #213E4A;
-		border-radius: 10px;
-
-		header{
-			height: 60px;
-			
-				h2{
-				border-bottom:1px solid #416371;
-			}
-		}
-	}
-
-
+	 &:after {
+        display: block;
+        content: "";
+        clear: both;
+	}	
 }
 
 /*================================*/
-/*      	Login Page
+/*      	Headings Styles
 /*================================*/
-
-/* Headings */
 h1,h2,h3{
 	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
 	text-shadow:0 1px 1px black;
@@ -79,14 +50,6 @@ h1{
 	text-transform:uppercase;
 }
 
-h3{
-	/* The slogan text */
-	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
-	font-size:2em;
-	font-weight:normal;
-	margin:0 0 1em;
-}
-
 
 h2{
 	font-size:2.2em;
@@ -95,8 +58,17 @@ h2{
 	text-transform:uppercase;
 }
 
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
 
-/* Hyperlink Styles: */
+/*================================*/
+/*      Hyperlinks styles
+/*================================*/
 a, a:visited {
 	color:#0196e3;
 	text-decoration:none;
@@ -110,76 +82,44 @@ a, a:visited {
 	}
 }
 
-/* Float bug fixing */
-.clearfix() {
-	 min-height: 0;
-	 _zoom: 1;
+/*================================*/
+/*      Text inputs styles
+/*================================*/
+.textinput-container{
+	width: 450px;
+	height: 30px;
+	margin-bottom: 20px;
 	
+	input[type=text], input[type=password]{
+		float: right;
+		border: 1px solid #A5C2C8; 
+		padding: 5px 5px 5px 5px; 
+		font: bold 1.6em Helvetiva, Arial, sans-serif;
+	}
 
-	 &:after {
-	        display: block;
-	        content: "";
-	        clear: both;
-	}	
-}
-
-/*horizontal line*/
-.line{
-	/* The dividing line: */
-	height:1px;
-	background-color:#24404c;
-	border-bottom:1px solid #416371;
-	margin:32px 0;
-}
-
-
-#login-panel {
-	width: 600px;
-	height: 380px;
-	margin: 60px auto;
-	padding: 20px;
-	border-radius: 10px;
-	background-color: #213E4A;
-
-	img {
+	label{
 		float: left;
-		margin-right: 20px;
-	}
-	
-	h1 {
-		font-size:3.5em;
-		padding:0.5em 0 0;
-		padding-top: 66px;	
-	}
-
-	.login-textbox {
 		display: block;
-		height: 30px;
-		width: 210px;
-
-		margin-bottom: 50px;
-		border-radius: 10px;
-		padding-left: 10px;
+		width: 200px;
+		margin: 10px 10px 0 0;
+		text-align: right;
 		font-size: 2em;
 	}
+}
 
-	#text-box-container {
-		float: left;
-		margin-top:20px;
+/*================================*/
+/*      Buttons for forms
+/*================================*/
+.buttons-for-forms{
+	width: 500px;
+	margin: 30px;
+	margin-left: 100px;
 
-	}
-
-	#buttons-container {
-		float: right;
-	}
-
-	.button {
-	    display: block;
-	    margin: 10px;
-	    padding: 20px 60px;
+	.form-button{	    
+	    padding: 10px 20px;
 	    text-align: center;
 	    text-decoration: none;
-	    font: bold 2.0em Arial, sans-serif;
+	    font: bold 2em Arial, sans-serif;
 	 
 	    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
 	 	border-radius: 15px;
@@ -187,24 +127,69 @@ a, a:visited {
 	    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
 	    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
 	    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+		
+		&:hover{
+			cursor: pointer;
+		}
+	}
 
-	    -webkit-transition: all 0.15s ease;
-	    -moz-transition: all 0.15s ease;
-	    -o-transition: all 0.15s ease;
-	    -ms-transition: all 0.15s ease;
-	    transition: all 0.15s ease;
- 	}
-	
-	.blue {
+	.blue-btn {
 	    color: #19667d;
 	    background: #70c9e3;
+	    &:hover{
+			background: #00688B;
+			color: #70c9e3; 
+	    }
 	}
  
-	/* Gray Color */
 	 
-	.gray {
+	.gray-btn {
 	    color: #515151;
 	    background: #d3d3d3;
+	    &:hover{
+	    	background: #787878;
+	    	color: #ccc;
+	    }
+	}
+}
+
+#page-container{
+	width: 960px;
+	margin: 0 auto;
+	
+	#header-inner{
+		position: relative;
+		height: 130px;
+		border-bottom:1px solid #416371;
+		img, h1 {
+			position: absolute;
+		}
+
+		h1 {
+			left: 140px;
+			bottom: 26px;
+		}
+	}
+	
+	#presentation-content{
+		margin-top: 20px;
+		font-size:1.9em;
 	}
 
+	/*================================*/
+	/*      	Login Form
+	/*================================*/
+	#login-form-container{
+		width: 550px;
+		height: 270px;
+		margin: 40px auto;
+		padding: 15px;
+		background-color: #213E4A;
+		border-radius: 10px;
+			h2{
+				margin-bottom: 20px;
+				padding-bottom:10px;
+				border-bottom:1px solid #416371;
+			}
+	}
 }

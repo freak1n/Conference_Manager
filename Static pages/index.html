@@ -2,15 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Conference Manager</title>
+    <title>Conference Manager - Login</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 </head>
 <body>
     <div id="page-container">
+        <!-- Site header -->
         <header>
             <div id="header-inner">
-                <img src="img/logo128.png" alt="Conference Manager" />
+                <img src="img/conference-manager-logo.png" alt="Conference Manager" />
                 <h1>Conference Manager</h1>
             </div>    
         </header>
@@ -23,29 +24,22 @@
         </div>
         
         <div id="login-form-container">
-            <header>
-                <h2>Вход в системата</h2>
-            </header>                
+            <h2>Вход в системата</h2>
+            <form action="post">
+                <div class="textinput-container clear">
+                    <label for="username-tb-login">Потребителско име:</label>
+                    <input id="username-tb-login" name="username-tb-login" type="text" />
+                </div>
+                <div class="textinput-container clear">
+                    <label for="password-tb-login">Парола:</label>
+                    <input id="password-tb-login" name="password-tb-login" type="password" />
+                </div>
+                <div id="login-buttons-container" class="buttons-for-forms">
+                    <input name="reg-lectures-btn" class="form-button gray-btn" type="button" value="Регистрация за лектори" />
+                    <input name="login-btn" class="form-button blue-btn" type="submit" value="Вход" />
+                </div>
+            </form>
         </div>
     </div>
-
-
-    <section id="login-panel">
-        <div class="clearfix">
-            <img src="img/logo128.png" alt="Conference Manager" />
-            <h1>Conference Manager</h1>
-        </div>
-        <div class="line"></div>
-        <form class="clearfix">
-            <div id="text-box-container">
-                <input id="username-textbox" placeholder="Потребителско име" class="login-textbox" type="text" />
-                <input id="password-textbox" placeholder="Парола" class="login-textbox" type="password" />
-            </div>
-            <div id="buttons-container">
-                <a href="#" class="button blue">Вход</a>
-                <a href="#" class="button gray">Регистрация за лектори</a>
-            </div>
-        </form>
-    </section>
 </body>
 </html>
