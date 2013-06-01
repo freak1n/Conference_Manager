@@ -1,6 +1,6 @@
 html,body,div,header,h1,h2,section,footer,img{margin:0;padding:0;border:0;font-size:62.5%;font:inherit;vertical-align:baseline;}
 body{font-family:Arial,Helvetica,sans-serif;font-size:62.5%;background-color:#355664;color:#fcfcfc;}
-header,section{display:block;}
+header,section,nav{display:block;}
 h1,h2,h3{font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;text-shadow:0 1px 1px black;}
 h1{font-size:3.5em;text-transform:uppercase;}
 h2{font-size:2.2em;font-weight:normal;letter-spacing:0.01em;text-transform:uppercase;}
@@ -17,8 +17,12 @@ input[type=text],input[type=password]{border:1px solid #A5C2C8;padding:5px;font:
 .buttons-for-forms{width:500px;margin:30px;margin-left:120px;}.buttons-for-forms .form-button{margin-left:10px;padding:10px 20px;text-align:center;text-decoration:none;font:bold 2em Arial,sans-serif;text-shadow:1px 1px 1px rgba(255, 255, 255, 0.22);border-radius:15px;-webkit-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);-moz-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);box-shadow:1px 1px 1px rgba(0, 0, 0, 0.29),inset 1px 1px 1px rgba(255, 255, 255, 0.44);}.buttons-for-forms .form-button:hover{cursor:pointer;}
 .buttons-for-forms .blue-btn{color:#19667d;background:#70c9e3;}.buttons-for-forms .blue-btn:hover{background:#00688B;color:#70c9e3;}
 .buttons-for-forms .gray-btn{color:#515151;background:#d3d3d3;}.buttons-for-forms .gray-btn:hover{background:#787878;color:#ccc;}
-#page-container{width:960px;margin:0 auto;}#page-container #header-inner{position:relative;height:130px;border-bottom:1px solid #416371;}#page-container #header-inner img,#page-container #header-inner h1{position:absolute;}
-#page-container #header-inner h1{left:140px;bottom:26px;}
+#page-container{width:960px;margin:0 auto;}#page-container #header-inner{position:relative;height:130px;border-bottom:1px solid #416371;}#page-container #header-inner img,#page-container #header-inner h1,#page-container #header-inner h2{position:absolute;}
+#page-container #header-inner h1{left:140px;bottom:50px;}
+#page-container #header-inner h2{left:140px;bottom:10px;}
 #page-container #presentation-content{margin-top:20px;font-size:1.9em;}
-#page-container #login-container,#page-container #lectures-reg-container{width:550px;margin:40px auto;padding:15px;background-color:#213E4A;border-radius:10px;}#page-container #login-container h2,#page-container #lectures-reg-container h2{margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #416371;}
-#page-container #login-container .upload-btns-container,#page-container #lectures-reg-container .upload-btns-container{margin-left:225px;}#page-container #login-container .upload-btns-container input[type=button],#page-container #lectures-reg-container .upload-btns-container input[type=button]{font-size:1.6em;}
+#page-container nav ul{list-style-type:none;}#page-container nav ul li{display:inline-block;padding:10px 10px;}#page-container nav ul li.current{border-bottom:5px solid #213E4A;}
+#page-container nav ul li a{display:block;font-size:2em;font-weight:bold;color:#ccc;}
+#page-container .content{min-height:700px;border-radius:5px;background-color:#213E4A;}
+#page-container .forms-container{width:550px;margin:40px auto;padding:15px;background-color:#213E4A;border-radius:10px;}#page-container .forms-container h2{margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #416371;}
+#page-container .forms-container .upload-btns-container{margin-left:225px;}#page-container .forms-container .upload-btns-container input[type=button]{font-size:1.6em;}

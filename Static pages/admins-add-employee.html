@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Conference Manager - Admin panel</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <div id="header-inner">
+                <img src="img/conference-manager-logo.png" alt="Conference Manager" />
+                <h1>Conference Manager</h1>
+                <h2>Администраторски панел</h2>
+            </div>    
+        </header>
+
+        <nav>
+            <ul>
+                <li class="current"><a href="#">Добавяне на служител</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <div id="login-container" class="forms-container">
+                <h2>Добавяне на нов служител</h2>
+                <form action="post">
+                    <div class="textinput-container">
+                        <label for="username-tb-newemployee">Потребителско име:</label>
+                        <input id="username-tb-newemployee" name="username-tb-newemployee" type="text" />
+                    </div>
+
+                    <div class="textinput-container">
+                        <label for="firstname-tb-newemployee">Име:</label>
+                        <input id="firstname-tb-newemployee" name="firstname-tb-newemployee" type="text" />
+                    </div>
+
+                    <div class="textinput-container">
+                        <label for="lastname-tb-newemployee">Фамилия:</label>
+                        <input id="lastname-tb-newemployee" name="lastname-tb-newemployee" type="text" />
+                    </div>
+
+                    <div class="textinput-container">
+                        <label for="position-tb-newemployee">Позиция:</label>
+                        <input id="position-tb-newemployee" name="position-tb-newemployee" type="text" />
+                    </div>
+
+
+                     <div class="textinput-container">
+                        <label for="re-password-tb-newemployee">Парола:</label>
+                        <input id="re-password-tb-newemployee" name="re-password-tb-newemployee" type="password" />
+                    </div>
+
+                    <div class="textinput-container">
+                        <label for="password-tb-newemployee">Повтори паролата:</label>
+                        <input id="password-tb-newemployee" name="password-tb-newemployee" type="password" />
+                    </div>
+
+                    <div id="newemployee-buttons-container" class="buttons-for-forms">
+                        <input name="newemployee-btn" class="form-button blue-btn" type="submit" value="Добави служител" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
